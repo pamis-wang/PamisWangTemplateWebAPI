@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageId>PamisWang.Template.WebAPI</PackageId>
+        <PackageType>Template</PackageType>
+        <PackageVersion>0.0.2</PackageVersion>
+        <Title>Pamis Wang Template Web API</Title>
+        <Authors>Pamis Wang</Authors>
+        <Description>Web API 範本</Description>
+        <PackageTags>dotnet-new;templates</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>favicon.png</PackageIcon>
+        <RepositoryUrl>https://github.com/pamiswang/PamisWangTemplateWebAPI</RepositoryUrl>
+        <PackageReleaseNotes>最初試作版本</PackageReleaseNotes>
+
+        <TargetFramework>netstandard2.0</TargetFramework>
+
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+        <Compile Remove="**\*" />
+        <None Update="favicon.png" Pack="true" PackagePath="\" />
+        <None Update="README.md" Pack="true" PackagePath="README.md" />
+    </ItemGroup>
+
+</Project>
