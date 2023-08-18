@@ -2,3 +2,4 @@ bin/Debug/PamisWang.Template.WebAPI.0.0.2.nupkg
 bin/**
 obj/**
 .vscode/**
+.vs/**

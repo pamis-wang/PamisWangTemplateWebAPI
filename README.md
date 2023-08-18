@@ -1,5 +1,8 @@
 # API Template ASP.NET Core 6
 
+目前還是練習用的專案，請不要真的用於生產環境！！
+[對應至此部落格文章文章](https://pamiswang.github.io/posts/2023-08-15-asp-dot-net-core-6-web-api-template)
+
 基於 ASP.NET Core 6 為基礎開發的 Web API 範本。
 
 建立一個適用於大多數開發場景的共通性功能，
